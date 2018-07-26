@@ -10,7 +10,7 @@ const userRoutes = require('./routes/userRoutes');
 mongoose.connect(process.env.DB_HOST, {useNewUrlParser: true});
 mongoose.connection
     .once('open', () => console.log('connected to db'))
-    .on('error', () => console.log(err));
+    .on('error', (err) => console.log(err));
 mongoose.Promise = global.Promise;
 
 // globalus kintamieji pasiekiami process.env
