@@ -107,7 +107,7 @@
       "target": "http://localhost:9000"
     },
     "/uploads":{
-      "target": "http://localhost:9000"
+      "target":"http://localhost:9000"
     }
   }
 }
